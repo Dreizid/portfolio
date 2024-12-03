@@ -4,9 +4,9 @@ import { ProjectProps } from './Projects'
 
 export default function ProjectCard({projectName, projectImage, projectDescription, techstack}: ProjectProps) {
   return (
-    <div className="bg-sky-900 mx-8">
-      <Image src={projectImage} alt={projectName + " Image"} width={175} height={150} />
-      <h1>{projectName}</h1>
+    <div className="p-8 mx-8 w-[500px]">
+      <Image src={projectImage} alt={projectName + " Image"} width={300} height={200} className="" />
+      <h1 className="flex justify-center text-lg m-4">{projectName}</h1>
       <p>{projectDescription}</p>
     </div>
   )
